@@ -1,0 +1,56 @@
+body{
+	width: 90%;
+	margin: 0 auto;
+}
+
+header{
+	text-align: center;
+}
+
+.editarTupla, .removerTupla{
+	margin:3px 5px;
+	cursor: pointer;
+}
+
+.sortCustomColumn{
+	cursor: pointer;
+}
+
+.actionColumn{
+	width: 60px;
+}
+
+.rowSelected{
+	background-color: #FFAD5C !important;
+}
+
+#mainTable{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.sqlSearchForm{
+	overflow: hidden;
+}
+
+.form-input{
+	width: 100%;
+	height: 50px;
+	margin: 5px 0;
+	float: left;
+}
+
+.form-submit{
+	width: 200px;
+	height: 50px;
+	margin: 10px;
+	float: right;	
+}
+
+.form-submit input{
+	margin:0 5px;
+}

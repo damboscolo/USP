@@ -1,0 +1,25 @@
+Inst				Bin			                            Hex Structure	Inst Offset	Function Field [Hex(Dec)]
+add rd rs rt		000000 sssss ttttt ddddd 00000 100000   0x0?????20   	0x0  		20(32)
+sub rd rs rt		000000 sssss ttttt ddddd 00000 100010   0x0?????22   	0x0  		22(34) 
+and	rd rs rt		000000 sssss ttttt ddddd 00000 100100	0x0?????24   	0x0  		24(36)
+or rd rs rt			000000 sssss ttttt ddddd 00000 100101	0x0?????25   	0x0  		25(37)
+slt	rd rs rt		000000 sssss ttttt ddddd 00000 101010   0x0?????2A   	0x0  		2A(42)
+bltzal	rs label    000001 sssss 10000 llllllllllllllll     0x0??0????   	0x1
+j label				000010 llllllllllllllllllllllllll		0x0???????   	0x2
+jal label			000011 llllllllllllllllllllllllll       0x0???????   	0x3
+beq	rs rt label		000100 sssss ttttt llllllllllllllll     0x1???????   	0x4
+bne	rs rt label		000101 sssss ttttt llllllllllllllll		0x1???????   	0x5
+addi rt rs imm	    001000 sssss ttttt iiiiiiiiiiiiiiii		0x2???????   	0x8
+lb rt address(rs)   100000 sssss ttttt aaaaaaaaaaaaaaaa     0x20??????   	0x20
+lw rt address(rs) 	100011 sssss ttttt aaaaaaaaaaaaaaaa		0x8???????   	0x23
+sb rt address(rs)   101000 sssss ttttt aaaaaaaaaaaaaaaa     0x28??????   	0x28
+sw rt address(rs)	101011 sssss ttttt aaaaaaaaaaaaaaaa     0xA???????   	0x2B
+
+
+s = Registrador RS
+t = Registrador RT
+d = Registrador RD
+i = Valor Imediato
+l = Endereço do label
+a = Endereço da memória
+? = Valor que depende dos registradores RS, RT, RD ou dos valores de Label e Address para ser convertido para HEX.

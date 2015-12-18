@@ -1,0 +1,13 @@
+Seleções Participantes: nome, letra do hino, continente, bandeira e grupo
+
+Atleta: nome, número único do passaporte, data de nascimento, altura, peso, nacionalidade (pode ser mais de uma), código de identificação, país que representa
+
+Árbitro: nome, número único do passaporte, data de nascimento,  nacionalidade (pode ser mais de uma), código de identificação
+
+Estádios: nome, endereço (rua, número e bairro), capacidade de público, local (cidade)
+*deve ser possível ver quais jogos ocorreram em cada estádio
+
+Jogos: seleções participantes, local, horário, data, fase da competição (grupos, oitavas de final), árbitros (juiz, auxiliares, quarto árbitro), público presente, renda, anunciantes publicitários, número identificador da partida, lance (tipo de lance, jogadores envolvidos, tempo do lance), escalações iniciais de cada seleção, jogadores em reserva
+
+Patrocinadores: nome, identificador, alvos (países que eles desejam aparecer)
+*patrocinadores não devem aparecer em jogos dos países que não tenham interesse

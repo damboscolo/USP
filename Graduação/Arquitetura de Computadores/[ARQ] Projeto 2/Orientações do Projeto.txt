@@ -1,0 +1,29 @@
+1. Leitura da instrução em hexadecimal (0x????????) (usando scanf("%x", &inst)).
+2. Instruções a serem convertidas: ADD, SUB, ADDI, AND, OR, SLT, BEQ, BNE, BLTZAL, J, JAL, LW, SW, LB, SB. (Veja o arquivo "Tabela de Instruções.txt" para maiores informações sobre elas).
+3. Imprimir a instrução em Assembly neste formato:
+	Instrução Assembly: <instrução MIPS e argumentos em caixa baixa, utilizando um espaço como separação dos args>
+	
+Ex:	Entrada:                 Bin:										Saída:
+	0x012B5020				 000000 01001 01011 01010 00000 100000		Instrução Assembly: add $t1 $t2 $t3
+	0x08000010				 000010 00000000000000000000010000			Instrução Assembly: j 16
+	0x8FA80014				 100011 11101 01000 0000000000010100		Instrução Assembly: lw $t0 20($sp)
+	0x12312415				 00010010001100010010010000010101			Instrução inválida.
+	0x00000000				 00000000000000000000000000000000			(Sair do programa.)
+
+3.1 As instruções ADD, SUB, AND, OR e SLT devem ter os campos de função checados para decodificação da instrução.
+3.2 Caso a instrução tenha um label, deve ser exibido o número do endereço do label em DECIMAL.
+3.3 Caso a instrução seja inválida, o programa deve voltar ao início e pedir mais uma instrução.
+3.4 Caso a instrução seja apenas formada por zeros (0x00000000) o programa deve ser finalizado, sem nenhuma mensagem.
+
+/ ------------------------------------------------------------------------------------------------------------------------------------------- /
+
+A correção levará em conta a execução correta do algoritmo e a qualidade do código fonte feito (modularização, identação,
+comentários corretos, legibilidade do código, nome significativos para variáveis, espaços entre porções do código, entre outros). Para
+verificar a execução correta do algoritmo é necessário que a entrada e a saída sigam rigorosamente a especificação dada neste
+documento.
+
+Nome do arquivo a ser entregue:
+
+G01-Daniele
+
+Forneça, obrigatoriamente, como comentário no início do corpo do arquivo submetido o número do grupo e o nome dos integrantes do grupo que efetivamente participaram do desenvolvimento.

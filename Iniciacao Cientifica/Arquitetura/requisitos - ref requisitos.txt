@@ -1,0 +1,90 @@
+Related Requirements
+
+RefSORS -> ROBAFIS
+
+Application
+R-R1  -> FR1, FR2, FR4, FR34
+R-R2  -> FR2, FR3
+R-R3  -> FR1, FR4, FR8, FR9
+R-R4  -> FR1, FR2, FR3
+R-R5  -> FR4, FR18, FR34
+
+Robotic Agent
+R-R6  -> NA
+R-R7  -> FR5, FR6, FR22, FR23, FR29
+R-R8  -> FR5, FR6, FR29, FR34
+R-R9  -> NA
+
+Task
+R-R10 -> NA
+R-R11 -> NA
+R-R12 -> FR19, FR20, FR33, FR35
+R-R13 -> FR25, FR26
+R-R14 -> FR7
+R-R15 -> FR30, FR31, FR32
+R-R16 -> FR10, FR16, FR17
+R-R17 -> FR11, FR12, FR13
+R-R18 -> FR13
+R-R19 -> FR21, FR24, FR37
+
+Knowledge
+R-R20 -> FR15
+R-R21 -> NA
+R-R22 -> FR15
+R-R23 -> NA
+
+Device Driver
+R-R24 -> FR36, FR40, FR41, FR42
+R-R25 -> NA
+R-R26 -> NA
+R-R27 -> NA
+R-R28 -> NA 
+R-R29 -> FR38,  FR39
+R-R30 -> NA
+
+
+
+ROBAFIS -> RefSORS
+
+FR1  -> R-R1, R-R3, R-R4
+FR2  -> R-R1, R-R3
+FR3  -> R-R2, R-R4
+FR4  -> R-R1, R-R3, R-R5
+FR5  -> R-R7, R-R8
+FR6  -> R-R7, R-R8
+FR7  -> R-R14
+FR8  -> R-R3
+FR9  -> R-R3
+FR10 -> R-R16
+FR11 -> R-R17
+FR12 -> R-R17
+FR13 -> R-R17, R-R18
+FR14 -> 
+FR15 -> R-R20, R-R22
+FR16 -> R-R16
+FR17 -> R-R16
+FR18 -> R-R5
+FR19 -> R-R12
+FR20 -> R-R12
+FR21 -> R-R19
+FR22 -> R-R7
+FR23 -> R-R7
+FR24 -> R-R19 
+FR25 -> R-R13
+FR26 -> R-R13
+FR27 -> 
+FR28 -> 
+FR29 -> R-R7, R-R8
+FR30 -> R-R15
+FR31 -> R-R15
+FR32 -> R-R15
+FR33 -> R-R12
+FR34 -> R-R1, R-R5
+FR35 -> R-R12
+FR36 -> R-R24
+FR37 -> R-R19
+FR38 -> R-R29
+FR39 -> R-R29
+FR40 -> R-R24
+FR41 -> R-R24
+FR42 -> R-R24

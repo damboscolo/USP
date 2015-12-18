@@ -1,0 +1,392 @@
+﻿--Grupo
+INSERT INTO Gru(id, par) 
+			VALUES (2, NULL);
+INSERT INTO Gru(id, par) 
+			VALUES (3, NULL);
+INSERT INTO Gru(id, par) 
+			VALUES (5, NULL);
+INSERT INTO Gru(id, par) 
+			VALUES (7, NULL);
+INSERT INTO Gru(id, par) 
+			VALUES (8, NULL);
+
+--Nacao
+INSERT INTO Nac(nome, bandeira) 
+			VALUES ('Brasil', EMPTY_BLOB());
+INSERT INTO Nac(nome, bandeira) 
+			VALUES ('Argentina', EMPTY_BLOB());
+INSERT INTO Nac(nome, bandeira) 
+			VALUES ('Espanha', EMPTY_BLOB());
+INSERT INTO Nac(nome, bandeira) 
+			VALUES ('Japão', EMPTY_BLOB());
+INSERT INTO Nac(nome, bandeira) 
+			VALUES ('Estados Unidos da América', EMPTY_BLOB());
+INSERT INTO Nac(nome, bandeira)
+			VALUES ('Mali', EMPTY_BLOB());
+INSERT INTO Nac(nome, bandeira)
+			VALUES ('El Salvador', EMPTY_BLOB());
+INSERT INTO Nac(nome, bandeira)
+			VALUES ('México', EMPTY_BLOB());
+INSERT INTO Nac(nome, bandeira)
+			VALUES ('Colômbia', EMPTY_BLOB());
+
+--Selecao
+INSERT INTO Sel(nomeNacao, idGrupo, hino, continente, pontos, golsMarcados, golsSofridos, saldo, cartAm, cartVer) 
+			VALUES ('Brasil', 7, 'Ouviram do Ipiranga as margens plácidas
+De um povo heroico o brado retumbante,
+E o sol da Liberdade, em raios fúlgidos,
+Brilhou no céu da Pátria nesse instante.
+
+Se o penhor dessa igualdade
+Conseguimos conquistar com braço forte,
+Em teu seio, ó Liberdade,
+Desafia o nosso peito a própria morte!
+
+Ó Pátria amada,
+Idolatrada,
+Salve! Salve!
+
+Brasil, um sonho intenso, um raio vívido,
+De amor e de esperança à terra desce,
+Se em teu formoso céu, risonho e límpido,
+A imagem do Cruzeiro resplandece.
+
+Gigante pela própria natureza,
+És belo, és forte, impávido colosso,
+E o teu futuro espelha essa grandeza.
+
+Terra adorada
+Entre outras mil
+És tu, Brasil,
+Ó Pátria amada!
+
+Dos filhos deste solo
+És mãe gentil,
+Pátria amada,
+Brasil!
+Deitado eternamente em berço esplêndido,
+Ao som do mar e à luz do céu profundo,
+Fulguras, ó Brasil, florão da América,
+Iluminado ao sol do Novo Mundo!
+
+Do que a terra mais garrida
+Teus risonhos, lindos campos têm mais flores,
+"Nossos bosques têm mais vida",
+"Nossa vida" no teu seio "mais amores".
+
+Ó Pátria amada,
+Idolatrada,
+Salve! Salve!
+
+Brasil, de amor eterno seja símbolo
+O lábaro que ostentas estrelado,
+E diga o verde-louro dessa flâmula
+- Paz no futuro e glória no passado.
+
+Mas se ergues da justiça a clava forte,
+Verás que um filho teu não foge à luta,
+Nem teme, quem te adora, a própria morte.
+
+Terra adorada
+Entre outras mil
+És tu, Brasil,
+Ó Pátria amada!
+
+Dos filhos deste solo
+És mãe gentil,
+Pátria amada,
+Brasil!', 'América do Sul', 7, 9, 4, golsMarcados - golsSofridos, 8, 1);
+INSERT INTO Sel(nomeNacao, idGrupo, hino, continente, pontos, golsMarcados, golsSofridos, saldo, cartAm, cartVer) 
+			VALUES ('Argentina', 2, 'Oíd, mortales, el grito sagrado:
+"¡Libertad! ¡Libertad! ¡Libertad!"
+Oíd el ruido de rotas cadenas
+ved en trono a la noble igualdad
+
+Ya su trono dignísimo abrieron
+las Provincias Unidas del Sud
+y los libres del mundo responden:
+"¡Al gran pueblo argentino, salud!"
+"¡Al gran pueblo argentino, salud!"
+Y los libres del mundo responden:
+"¡Al gran pueblo argentino, salud!"
+Y los libres del mundo responden:
+"¡Al gran pueblo argentino, salud!"
+
+Sean eternos los laureles,
+que supimos conseguir,
+que supimos conseguir.
+Coronados de gloria vivamos...
+o juremos con gloria morir!
+O juremos con gloria morir!
+O juremos con gloria morir!', 'América do Sul', 9, 10, 6, golsMarcados - golsSofridos, 7, 0); 
+INSERT INTO Sel(nomeNacao, idGrupo, hino, continente, pontos, golsMarcados, golsSofridos, saldo, cartAm, cartVer) 
+			VALUES ('Espanha', 8, '¡Viva España!
+Cantemos todos juntos
+con distinta voz
+y un solo corazón.
+¡Viva España!
+Desde los verdes valles
+al inmenso mar,
+un himno de hermandad.
+Ama a la Patria
+pues sabe abrazar,
+bajo su cielo azul,
+pueblos en libertad.
+Gloria a los hijos
+que a la Historia dan
+justicia y grandeza
+democracia y paz.', 'Europa', 6, 8, 2, golsMarcados - golsSofridos, 8, 0);
+INSERT INTO Sel(nomeNacao, idGrupo, hino, continente, pontos, golsMarcados, golsSofridos, saldo, cartAm, cartVer) 
+			VALUES ('Japão', 5, 'May your reign
+Continue for a thousand, eight thousand generations,
+Until the pebbles
+Grow into boulders
+Lush with moss', 'Ásia', 6, 4, 2, golsMarcados - golsSofridos, 7, 0);
+INSERT INTO Sel(nomeNacao, idGrupo, hino, continente, pontos, golsMarcados, golsSofridos, saldo, cartAm, cartVer) 
+			VALUES ('Estados Unidos da América', 3, 'O say can you see by the dawn''s early light,
+What so proudly we hailed at the twilight''s last gleaming,
+Whose broad stripes and bright stars through the perilous fight,
+O''er the ramparts we watched, were so gallantly streaming?
+And the rockets'' red glare, the bombs bursting in air,
+Gave proof through the night that our flag was still there;
+O say does that star-spangled banner yet wave,
+O''er the land of the free and the home of the brave?
+
+On the shore dimly seen through the mists of the deep,
+Where the foe''s haughty host in dread silence reposes,
+What is that which the breeze, o''er the towering steep,
+As it fitfully blows, half conceals, half discloses?
+Now it catches the gleam of the morning''s first beam,
+In full glory reflected now shines in the stream:
+''Tis the star-spangled banner, O! long may it wave
+O''er the land of the free and the home of the brave.
+
+And where is that band who so vauntingly swore
+That the havoc of war and the battle''s confusion,
+A home and a country, should leave us no more?
+Their blood has washed out their foul footsteps'' pollution.
+No refuge could save the hireling and slave
+From the terror of flight, or the gloom of the grave:
+And the star-spangled banner in triumph doth wave,
+O''er the land of the free and the home of the brave.
+
+O thus be it ever, when freemen shall stand
+Between their loved home and the war''s desolation.
+Blest with vict''ry and peace, may the Heav''n rescued land
+Praise the Power that hath made and preserved us a nation!
+Then conquer we must, when our cause it is just,
+And this be our motto: "In God is our trust."
+And the star-spangled banner in triumph shall wave
+O''er the land of the free and the home of the brave!', 'América do Norte', 5, 5, 5, golsMarcados - golsSofridos, 9, 0);
+
+--Pessoa
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'A', 'Yuichi Nishimura', '3332', to_date('17/04/72','dd/mm/yy'));
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'A', 'Koman Coulibaly', '36446', to_date('04/07/70','dd/mm/yy'));
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'A', 'Joel Aguilar', '5545', to_date('02/07/75','dd/mm/yy'));
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'A', 'Benito Archundia', '8787', to_date('21/03/66','dd/mm/yy'));
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'J', 'Shunsuke Nakamura', '521', to_date('03/07/79','dd/mm/yy'));
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'J', 'Landon Donovan', '5553', to_date('14/05/81','dd/mm/yy'));
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'J', 'Kaká', '5547', to_date('22/04/82','dd/mm/yy'));
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'J', 'David Villa', '4052', to_date('15/02/81','dd/mm/yy'));
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'J', 'Carlos Tévez', '8552', to_date('13/02/81','dd/mm/yy'));
+INSERT INTO Pes (id, subclasse, nome, passaporte, nascimento) 
+			VALUES (SeqPessoaId.NEXTVAL, 'A', 'Óscar Ruiz', '2225', to_date('01/11/69','dd/mm/yy'));
+
+--PertenceA (acho que precisam ser 20 inserções aqui... e pra isso, vamos precisar de 20 pessoas... =/)
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (1, 'Japão');
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (2, 'Mali');
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (3, 'El Salvador');
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (4, 'México');
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (5, 'Japão');
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (6, 'Estados Unidos da América');
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (7, 'Brasil');
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (8, 'Espanha');
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (9, 'Argentina');
+INSERT INTO PertA(idPessoa, nomeNacao)
+			VALUES (10, 'Colômbia');
+
+--Jogador
+INSERT INTO Jogd(idPessoa, nomeSelecao, peso, altura) -- Shunsuke Nakamura
+			VALUES (5, 'Japão', 72, 1.68);
+INSERT INTO Jogd(idPessoa, nomeSelecao, peso, altura) -- Landon Donovan
+			VALUES (6, 'Estados Unidos da América', 83, 1.83); 
+INSERT INTO Jogd(idPessoa, nomeSelecao, peso, altura) -- Kaká
+			VALUES (7, 'Brasil', 74, 1.76); 
+INSERT INTO Jogd(idPessoa, nomeSelecao, peso, altura) -- David Villa 
+			VALUES (8, 'Espanha', 80, 1.82); 
+INSERT INTO Jogd(idPessoa, nomeSelecao, peso, altura) -- Carlos Tevez
+			VALUES (9, 'Argentina', 71, 1.69); 
+
+--Estadio
+INSERT INTO Est(id, nome, cidade, capacidade, rua, bairro, nro) 
+			VALUES (SeqEstadioId.NEXTVAL, 'Nelson Mandela Bay Stadium', 'Port Elizabeth', 48000, 'Prince Alfred Road', 'North End', 6001);
+INSERT INTO Est(id, nome, cidade, capacidade, rua, bairro, nro) 
+			VALUES (SeqEstadioId.NEXTVAL, 'Loftus Versfeld Stadium', 'Pretoria', 51000, 'Kirkness St', 'Arcadia', 440);
+INSERT INTO Est(id, nome, cidade, capacidade, rua, bairro, nro) 
+			VALUES (SeqEstadioId.NEXTVAL, 'Cape Town Stadium', 'Cape Town', 69000, 'Fritz Sonnenberg Road', 'Green Point', 8051);
+INSERT INTO Est(id, nome, cidade, capacidade, rua, bairro, nro) 
+			VALUES (SeqEstadioId.NEXTVAL, 'Moses Mabhida Stadium', 'Durban', 70000, 'Masabalala Yengwa Ave', 'Stamford Hill', 4025);
+INSERT INTO Est(id, nome, cidade, capacidade, rua, bairro, nro) 
+			VALUES (SeqEstadioId.NEXTVAL, 'Ellis Park Stadium', 'Johannesburg', 59611,'Doornfontein', '47 North Park Lane', 2028);
+
+--Jogo
+INSERT INTO Jog(id, idEstadio, hr, dt, fase, renda, publicoPresente)
+			VALUES(SeqJogoId.NEXTVAL, 3, '20:30', to_date('11/06/10', 'dd/mm/yy'), 'G1', 9615000, 64100);
+INSERT INTO Jog(id, idEstadio, hr, dt, fase, renda, publicoPresente)
+			VALUES(SeqJogoId.NEXTVAL, 5, '16:00', to_date('12/06/10', 'dd/mm/yy'), 'G1', 8352900, 55686);
+INSERT INTO Jog(id, idEstadio, hr, dt, fase, renda, publicoPresente)
+			VALUES(SeqJogoId.NEXTVAL, 2, '16:00', to_date('23/06/10', 'dd/mm/yy'), 'G3', 7165400, 35827);
+INSERT INTO Jog(id, idEstadio, hr, dt, fase, renda, publicoPresente)
+			VALUES(SeqJogoId.NEXTVAL, 1, '16:00', to_date('26/06/10', 'dd/mm/yy'), 'O', 4589550, 30597);
+INSERT INTO Jog(id, idEstadio, hr, dt, fase, renda, publicoPresente)
+			VALUES(SeqJogoId.NEXTVAL, 4, '20:30', to_date('07/07/10', 'dd/mm/yy'), 'S', 9144000, 60960);
+			
+--Enfrenta (não entendi como funciona essa tabela, depois vê se vc entende) (20x)
+INSERT INTO Enf(fasePosterior, faseAnteriorJ1, faseAnteriorJ2, vencedor)
+			VALUES ();
+INSERT INTO Enf(fasePosterior, faseAnteriorJ1, faseAnteriorJ2, vencedor)
+			VALUES ();
+INSERT INTO Enf(fasePosterior, faseAnteriorJ1, faseAnteriorJ2, vencedor)
+			VALUES ();
+INSERT INTO Enf(fasePosterior, faseAnteriorJ1, faseAnteriorJ2, vencedor)
+			VALUES ();
+INSERT INTO Enf(fasePosterior, faseAnteriorJ1, faseAnteriorJ2, vencedor)
+			VALUES ();
+
+--Informacao
+INSERT INTO Info(idJogo, nomeSelecao1, nomeSelecao2)
+			VALUES (1, 'Uruguai', 'França');
+INSERT INTO Info(idJogo, nomeSelecao1, nomeSelecao2)
+			VALUES (2, 'Argentina', 'Nigéria');
+INSERT INTO Info(idJogo, nomeSelecao1, nomeSelecao2)
+			VALUES (3, 'Estados Unidos da América', 'Algéria');
+INSERT INTO Info(idJogo, nomeSelecao1, nomeSelecao2)
+			VALUES (4, 'Uruguai', 'Coréia do Sul');
+INSERT INTO Info(idJogo, nomeSelecao1, nomeSelecao2)
+			VALUES (5, 'Alemanha', 'Espanha');
+
+--Tipo
+INSERT INTO Tp(id, descritor)
+			VALUES (SeqTipoId.NEXTVAL, 'Gol');
+INSERT INTO Tp(id, descritor)
+			VALUES (SeqTipoId.NEXTVAL, 'Lance de Perigo');
+INSERT INTO Tp(id, descritor)
+			VALUES (SeqTipoId.NEXTVAL, 'Cartão Amarelo');
+INSERT INTO Tp(id, descritor)
+			VALUES (SeqTipoId.NEXTVAL, 'Cartão Vermelho');
+INSERT INTO Tp(id, descritor)
+			VALUES (SeqTipoId.NEXTVAL, 'Substituição');
+
+--Árbitro
+INSERT INTO Arb(idPessoa)
+			VALUES (1);
+INSERT INTO Arb(idPessoa)
+			VALUES (2);
+INSERT INTO Arb(idPessoa)
+			VALUES (3);
+INSERT INTO Arb(idPessoa)
+			VALUES (4);
+INSERT INTO Arb(idPessoa)
+			VALUES (10);
+			
+--JogouEm
+INSERT INTO JgEm(idJogo, idJogador, titular, cartVer, cartAm)
+			VALUES ();
+INSERT INTO JgEm(idJogo, idJogador, titular, cartVer, cartAm)
+			VALUES ();
+INSERT INTO JgEm(idJogo, idJogador, titular, cartVer, cartAm)
+			VALUES ();
+INSERT INTO JgEm(idJogo, idJogador, titular, cartVer, cartAm)
+			VALUES ();
+INSERT INTO JgEm(idJogo, idJogador, titular, cartVer, cartAm)
+			VALUES ();
+			
+--Lance
+INSERT INTO Lan(idJogo, tempo, idTipo, descricao)
+			VALUES ();
+INSERT INTO Lan(idJogo, tempo, idTipo, descricao)
+			VALUES ();
+INSERT INTO Lan(idJogo, tempo, idTipo, descricao)
+			VALUES ();
+INSERT INTO Lan(idJogo, tempo, idTipo, descricao)
+			VALUES ();
+INSERT INTO Lan(idJogo, tempo, idTipo, descricao)
+			VALUES ();
+			
+--ParticipaDe (20x)
+INSERT INTO PartDe(idJogo, tempo, idJogador)
+			VALUES ();
+INSERT INTO PartDe(idJogo, tempo, idJogador)
+			VALUES ();
+INSERT INTO PartDe(idJogo, tempo, idJogador)
+			VALUES ();
+INSERT INTO PartDe(idJogo, tempo, idJogador)
+			VALUES ();
+INSERT INTO PartDe(idJogo, tempo, idJogador)
+			VALUES ();
+			
+--Apita (20x)
+INSERT INTO Apt(idArbitro, idJogo, funcao)
+			VALUES ();
+INSERT INTO Apt(idArbitro, idJogo, funcao)
+			VALUES ();
+INSERT INTO Apt(idArbitro, idJogo, funcao)
+			VALUES ();
+INSERT INTO Apt(idArbitro, idJogo, funcao)
+			VALUES ();
+INSERT INTO Apt(idArbitro, idJogo, funcao)
+			VALUES ();
+			
+--Patrocinador
+INSERT INTO Pat(id, nome)
+			VALUES (SeqPatrocinadorId.NEXTVAL, 'Coca-Cola');
+INSERT INTO Pat(id, nome)
+			VALUES (SeqPatrocinadorId.NEXTVAL, '');
+INSERT INTO Pat(id, nome)
+			VALUES (SeqPatrocinadorId.NEXTVAL, '');
+INSERT INTO Pat(id, nome)
+			VALUES (SeqPatrocinadorId.NEXTVAL, '');
+INSERT INTO Pat(id, nome)
+			VALUES (SeqPatrocinadorId.NEXTVAL, '');
+			
+--Interesse (20x)
+INSERT INTO Inter(idPatrocinador, nomeSelecao)
+			VALUES(1, 'Brasil');
+INSERT INTO Inter(idPatrocinador, nomeSelecao)
+			VALUES( , '');
+INSERT INTO Inter(idPatrocinador, nomeSelecao)
+			VALUES( , '');
+INSERT INTO Inter(idPatrocinador, nomeSelecao)
+			VALUES( , '');
+INSERT INTO Inter(idPatrocinador, nomeSelecao)
+			VALUES( , '');
+			
+--DivulgadoEm (20x)
+INSERT INTO DivEm(idPatrocinador, idJogo)
+			VALUES();
+INSERT INTO DivEm(idPatrocinador, idJogo)
+			VALUES();
+INSERT INTO DivEm(idPatrocinador, idJogo)
+			VALUES();
+INSERT INTO DivEm(idPatrocinador, idJogo)
+			VALUES();
+INSERT INTO DivEm(idPatrocinador, idJogo)
+			VALUES();

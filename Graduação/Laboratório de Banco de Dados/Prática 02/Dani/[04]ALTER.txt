@@ -1,0 +1,33 @@
+﻿/* Alteração de tabelas e tuplas
+   Alguns comandos podem ser executados depois de [01]CREATE_TABLE (marcados com [01] no início da sua declaração)
+   Outros devem ser executados após [03]INSERT (marcados com [03] no início da sua declaração)
+*/
+
+/* TODO:
+   - Everything. =D
+*/
+
+//4.a
+
+ALTER TABLE Jogo 
+	ADD prorrogacao VARCHAR2(50) DEFAULT 0
+	CONSTRAINT chk_prorrogacao CHECK (prorrogacao >= 0);
+
+//Explique o comportamento do SGBD com relação ao conteúdo da tabela: 
+//como ficam os valores deste novo atributo nas tuplas previamente existentes? 
+//Faça testes
+
+
+//4. b
+
+ALTER TABLE Pessoa ADD CONSTRAINT UN_nome UNIQUE (nome);
+
+
+• Escolha uma tabela com chave primária (PK) definida por apenas um atributo, 
+e que seja referenciada por uma chave estrangeira (FK) de outra tabela. 
+Tente remover a PK. Teste o comando com e sem CASCADE. Explique o que acontece.
+No caso do CASCADE, explique o que acontece na tabela em que havia a PK e na 
+tabela em que havia a FK (pesquise e use o comando DESCRIBE).
+
+
+//5 DESATIVAR CHECK

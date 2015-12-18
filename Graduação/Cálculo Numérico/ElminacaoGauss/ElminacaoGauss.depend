@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1365637461 source:c:\users\owner\dropbox\usp\disciplinas\calculo numerico\elminacaogauss\main.c
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+

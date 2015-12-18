@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1364435826 source:c:\users\owner\dropbox\usp\disciplinas\calculo numerico\newton\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

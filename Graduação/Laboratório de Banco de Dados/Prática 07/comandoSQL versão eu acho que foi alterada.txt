@@ -1,0 +1,125 @@
+create or replace PROCEDURE comandoSQL(p_identificador VARCHAR2,
+                     p_nomeTabela VARCHAR2, 
+                     p_nomeAtributoChave VARCHAR2, 
+                     p_valorAtributoChave VARCHAR2,
+                     p_nomeAtributo VARCHAR2, 
+                     p_novoValorAtributo VARCHAR2) AS
+	
+  v_result VARCHAR(100);
+  v_result1 VARCHAR(100);
+	
+	v_numAtributoChave NUMBER;
+	
+	v_tipo VARCHAR(100);
+	v_tipo2 VARCHAR(100);
+	
+	v_numAtributos NUMBER;
+	v_atributo1	VARCHAR2(100);
+	v_atributo2 VARCHAR2(100);
+	
+	comando VARCHAR2(1500);
+	
+	exc_notAIdentifier 	   EXCEPTION;
+	exc_notASingleKeyTable EXCEPTION;
+	exc_commandError	   EXCEPTION;
+	
+  --Não funciona! =/
+  CURSOR c_columns IS SELECT column_name
+						FROM user_tab_columns uc
+						WHERE uc.table_name = upper(p_nomeTabela); --Por causa disso! p_nomeTable não pode ser usado aqui...
+  --Até aqui!
+BEGIN
+  v_atributo2 := ' ';
+
+	--Se o identificador não for SELECT, DELETE ou UPDATE cai na exceção exc_notAIdentifier
+	IF(upper(p_identificador) NOT IN ('SELECT', 'DELETE', 'UPDATE')) THEN
+		RAISE exc_notAIdentifier;
+	END IF;
+	
+	--Conta o número de Primary Keys da Tabela
+	SELECT count(*) INTO v_numAtributoChave
+	FROM user_constraints uc
+	JOIN user_cons_columns uco ON uco.constraint_name = uc.constraint_name AND uco.owner = uc.owner
+	WHERE uco.table_name = upper(p_nomeTabela)
+	AND uc.constraint_type = 'P';
+
+	--Se a tabela possuir mais de uma Primary Key, entra na exceção exc_notASingleKeyTable
+	IF(v_numAtributoChave > 1) THEN
+		RAISE exc_notASingleKeyTable;
+	END IF;
+	
+	OPEN c_columns;
+	v_numAtributos := c_columns%ROWCOUNT;
+	
+	FETCH c_columns INTO v_atributo1;
+	
+  IF(c_columns%FOUND) THEN
+    FETCH c_columns INTO v_atributo2;
+  END IF;
+	
+	CLOSE c_columns;
+	
+  dbms_output.put_line(v_atributo1 || v_atributo2);
+  
+	CASE upper(p_identificador)
+		--SELECT
+		WHEN 'SELECT' THEN
+			IF(v_atributo2 <> ' ') THEN
+				comando := 'SELECT ' ||  upper(v_atributo1) || ', ' || upper(v_atributo2) || ' FROM ' ||  upper(p_nomeTabela) || ' WHERE ' || upper(p_nomeTabela) || '.' || upper(p_nomeAtributoChave) || ' = ' || p_valorAtributoChave;
+				
+        dbms_output.put_line(comando);
+        
+				EXECUTE IMMEDIATE comando INTO v_result, v_result1;
+				
+				dbms_output.put_line(v_atributo1 || '    ' || v_atributo2);
+				
+				dbms_output.put_line(v_result || '    ' || v_result1);
+			ELSIF(v_numAtributos = 1) THEN
+				comando := 'SELECT ' ||  upper(v_atributo1) || ' FROM ' || upper(p_nomeTabela) || ' WHERE ' || upper(p_nomeTabela) || '.' || upper(p_nomeAtributoChave) || ' = ' || p_valorAtributoChave;
+				
+        dbms_output.put_line(comando);
+        
+				EXECUTE IMMEDIATE comando INTO v_result;
+				
+				dbms_output.put_line(v_atributo1);
+				
+				dbms_output.put_line(v_result);
+			ELSE
+				RAISE exc_commandError;
+			END IF;
+		--UPDATE
+		WHEN 'UPDATE' THEN
+			comando := 'UPDATE ' || UPPER(p_nomeTabela) ||' SET '|| UPPER(p_nomeAtributo) ||' = '''|| UPPER(p_novoValorAtributo) ||''' WHERE '|| UPPER(p_nomeAtributoChave) || ' = '|| UPPER(p_valorAtributoChave);
+			
+      dbms_output.put_line(comando);
+      
+			IF(SQL%FOUND) THEN
+				dbms_output.put_line('Comando ' || p_identificador || ' executado com sucesso.');
+			ELSE
+				RAISE exc_commandError;
+			END IF;
+		--DELETE
+		WHEN 'DELETE' THEN
+			comando := 'DELETE FROM ' || upper(p_nomeTabela) || ' WHERE ' || upper(p_nomeTabela) || '.' || upper(p_nomeAtributoChave) || ' = ' || p_valorAtributoChave;
+			
+      dbms_output.put_line(comando);
+      
+			IF(SQL%FOUND) THEN
+				dbms_output.put_line('Comando ' || p_identificador || ' executado com sucesso.');
+			ELSE
+				RAISE exc_commandError;
+			END IF;
+    ELSE
+      RAISE exc_commandError;
+	END CASE;
+
+EXCEPTION
+WHEN exc_notAIdentifier THEN
+	raise_application_error(-20000, upper(p_identificador) || ' não é um identificador válido para um das operações. Use ''SELECT'', ''UPDATE'' ou ''DELETE''.');
+WHEN exc_notASingleKeyTable THEN
+	raise_application_error(-20001, p_nomeTabela || ' não é uma tabela de chave única.');
+WHEN exc_commandError THEN
+	raise_application_error(-20002, upper(p_identificador) || ' não foi executado corretamente.');
+WHEN OTHERS THEN
+	dbms_output.put_line(SQLErrm);
+END;

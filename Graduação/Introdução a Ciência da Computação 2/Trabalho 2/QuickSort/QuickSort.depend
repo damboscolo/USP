@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1351116635 source:c:\users\owner\desktop\usp\icc 2\trabalho 2\quicksort\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1351355816 source:c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 2\quicksort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	<GL/freeglut.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1066747314 c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 2\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1307692032 c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 2\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1315179512 c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 2\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1352319897 source:g:\dropbox\usp\disciplinas\icc 2\trabalho 2\quicksort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	<GL/freeglut.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1066750914 g:\dropbox\usp\disciplinas\icc 2\trabalho 2\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1307692032 g:\dropbox\usp\disciplinas\icc 2\trabalho 2\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1315179512 g:\dropbox\usp\disciplinas\icc 2\trabalho 2\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+

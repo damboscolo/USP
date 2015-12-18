@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1353532511 source:c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 3\tabela hash 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	<GL/freeglut.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"hash.h"
+
+1066747314 c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 3\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1307692032 c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 3\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1315179512 c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 3\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1353471179 c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 3\tabela hash 2\hash.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<GL/freeglut.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	"visual.h"
+
+1353001281 c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 3\tabela hash 2\visual.h
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	<GL/freeglut.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1353440146 source:c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 3\tabela hash 2\visual.c
+	"visual.h"
+
+1353532692 source:c:\users\owner\dropbox\usp\disciplinas\icc 2\trabalho 3\tabela hash 2\hash.c
+	"hash.h"
+

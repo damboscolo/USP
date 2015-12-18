@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1352265282 source:g:\dropbox\usp\disciplinas\icc 2\trabalho 2\mergesort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	<GL/freeglut.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1066750914 g:\dropbox\usp\disciplinas\icc 2\trabalho 2\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1307692032 g:\dropbox\usp\disciplinas\icc 2\trabalho 2\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1315179512 g:\dropbox\usp\disciplinas\icc 2\trabalho 2\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+

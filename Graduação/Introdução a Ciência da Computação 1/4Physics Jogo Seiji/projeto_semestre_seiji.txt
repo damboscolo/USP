@@ -1,0 +1,41 @@
+Personagem tem que atravesar a fase usando manipulação de elementos da fisica
+Objetivo
+
+Desafios: Aplicar em C as atraves de uma interface gráfica conceitos da física em forma de jogo
+Publico Alvo: jovens adultos com interesse em jogos
+
+Entrada:
+	- Controles do Jogo
+Saída
+	- Resposta gráfica do jogo na tela
+
+Funcionalidades:
+	- Divertir o usuario
+
+Habilidades:
+Manipulação:
+	- gravidade
+	- massa por calor
+	- força
+	- pressão
+	- eletricidade
+	- magnetismo
+	- atrito
+	- espaço - tempo
+	- elasticidade
+
+Extra:
+	- Cobinaçao de itens e elementos na criação de novos itens
+
+Jogo:
+	- Cenario (estático)
+		- limites do estagio
+		- fundo dinamico
+		- 
+	- personagem
+	- gráfico e animação
+	- Habilidades
+	- objetos do cenario
+	- funções básicas
+	- jogabilidade
+	- sons

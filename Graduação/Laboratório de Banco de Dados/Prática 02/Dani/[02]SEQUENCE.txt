@@ -1,0 +1,43 @@
+/* Cria as sequências necessárias para os atributos das tabelas
+   Deve ser executado antes das inserções, pois as sequências são usadas nas inserções
+*/
+
+/* TODO:
+   - Checar se as sequências estão todas presentes.
+   - Otimizar os valores MIN e MAX para algo mais real, checando se existe um número determinado de jogos, estádios, etc.
+*/ 
+
+CREATE SEQUENCE seq_idPessoa
+	MINVALUE 1
+	MAXVALUE 9999
+	START WITH 1
+	INCREMENT BY 1
+	NOCACHE;
+
+CREATE SEQUENCE seq_idJogo
+	MINVALUE 1
+	MAXVALUE 100
+	START WITH 1
+	INCREMENT BY 1
+	NOCACHE;
+
+CREATE SEQUENCE seq_idEstadio
+	MINVALUE 1
+	MAXVALUE 100
+	START WITH 1
+	INCREMENT BY 1
+	NOCACHE;
+
+CREATE SEQUENCE seq_idPatroc
+	MINVALUE 1
+	MAXVALUE 9999
+	START WITH 1
+	INCREMENT BY 1
+	NOCACHE;
+
+CREATE SEQUENCE seq_idLance
+	MINVALUE 1
+	MAXVALUE 99999
+	START WITH 1
+	INCREMENT BY 1
+	NOCACHE;

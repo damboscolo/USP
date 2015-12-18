@@ -1,0 +1,14 @@
+call comandoSQL('update', 'estadio', 'id', '5', 'nro', '357');
+
+call operacaoGenerica('estadio','5',null,null,'select');
+
+
+
+BEGIN
+  --comandoSQL('select', 'estadio', 'id', '5', null, null);
+  comandoSQL('update', 'estadio', 'id', '5', 'nro', '300');
+  --comandoSQL('delete', 'estadio', 'id', '5', null, null);
+END;
+
+UPDATE ESTADIO SET NRO = 300 WHERE ESTADIO.ID = 5;
+UPDATE ESTADIO SET NRO = '300' WHERE ID = 5

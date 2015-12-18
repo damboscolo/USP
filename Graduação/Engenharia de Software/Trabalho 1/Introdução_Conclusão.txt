@@ -1,0 +1,14 @@
+Introdução e Conclusão para o trabalho de EngSoft.
+Modifiquem o que quiserem. Adicionem mais coisas.
+
+Introdução:
+O cálculo de custos e prazos de produção de software é uma parte importante do gerenciamento de projetos, visto que se os custos anunciados ao cliente forem menores que o esperado, o software perderá em qualidade e possivelmente deixará o cliente insatisfeito. Caso o prazo anunciado seja maior do que o cliente pode achar que um projeto demore, este pode rejeitar o projeto também.
+Então, o planejamento através de um cálculo prévio, utilizando-se dados anteriores ou mesmo apenas fazendo-se um cálculo à partir de mock-ups das interfaces torna-se imprescindível para uma empresa ter sucesso na venda de seus softwares e na conquista de clientes.
+A contagem de pontos de função apresentada nesse trabalho é um método de cálculo de custos e prazos de um projeto de software utilizado por empresas para regular seus custos e prazos com algo mais condizente com o mercado e com o que é aceitável por seus clientes.
+O cálculo de pontos de função também pode servir para medir se um projeto é ou não rentável para a empresa antes que essa comece a trabalhar em tal, garantindo alguma segurança, embora não total, de riscos com gastos e prazos.
+O modelo de estimativa utilizado é o modelo COCOMO Básico para projetos orgânicos que lida com projetos pequenos, realizados por equipes menores e com baixa experiência.
+
+Conclusão:
+Como mencionado anteriormente, o cálculo de pontos de função é importante para apresentar um projeto com custo e prazos aceitáveis para os clientes, além de garantir alguma segurança para a empresa em relação a riscos com gastos e prazos, sejam eles de pessoal ou de prazo gasto em desenvolvimento. Embora a segurança garantida não seja grande, tendo em vista que os cálculos são feitos com base em estimativas.
+O método utilizado é simples, porém eficaz em nos retornar esses dados a partir das contagens de campos interfaces e arquivos lógicos. 
+O modelo de estimativa utilizado já possui uma nova forma, o COCOMO II que possui novas métricas que correspondem melhor ao cálculo de novos sistemas de software. O novo modelo surgiu devido a mudança dos sistemas de software que passaram a utilizar maior reuso de código e desenvolvimento para desktops.
